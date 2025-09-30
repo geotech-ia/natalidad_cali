@@ -13,7 +13,7 @@ SUM(n_2003) AS nac_03, SUM(n_2004) AS nac_04, SUM(n_2005) AS nac_05, SUM(n_2006)
 SUM(n_2007) AS nac_07, SUM(n_2008) AS nac_08, SUM(n_2009) AS nac_09, SUM(n_2010) AS nac_10,
 SUM(n_2011) AS nac_11, SUM(n_2012) AS nac_12, SUM(n_2013) AS nac_13, SUM(n_2014) AS nac_14,
 SUM(n_2015) AS nac_15, SUM(n_2016) AS nac_16, SUM(n_2017) AS nac_17
-FROM manzana_censal_nacimientos_87_17
+FROM manzana_censal_nacimientos_87_17 WHERE comcor = 'Comuna 19' or comcor = 'Los Andes'
 GROUP BY barrio 
 ORDER BY total DESC, nac_87, nac_88, nac_89, nac_90, nac_91, nac_92, nac_93, nac_94, nac_95, nac_96, nac_97,
 nac_98, nac_99, nac_00, nac_01, nac_02, nac_03, nac_04, nac_05, nac_06, nac_07, nac_08, nac_09,
